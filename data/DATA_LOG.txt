@@ -1,0 +1,6 @@
+# DATA_LOG.txt: record of every dataset in data/ (scripts append one line per event)
+# Format: UTC timestamp | source | action | n=count | path | notes
+# Sources: ClawHub public API (https://clawhub.ai/api/v1), GitHub code search for filename:SKILL.md
+# Scripts: scripts/download_clawhub.py, scripts/download_github.py (UI terms in scripts/common.py)
+2026-11-05T03:16:29Z | github | code search q=filename:SKILL.md ui | n=1000 | data/raw/github/hits/ui.jsonl | total_count=5603328 (API caps at 1000)
+2026-11-05T03:20:25Z | clawhub | STOPPED by user during catalog fetch (8552 rows saved); catalog.jsonl incomplete, rerun needed | n=- | data/raw/clawhub/catalog.jsonl | no SKILL.md downloaded yet

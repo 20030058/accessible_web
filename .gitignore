@@ -1,0 +1,5 @@
+# Downloaded corpora are large; re-create them with scripts/ (see data/DATA_LOG.txt)
+data/raw/
+data/*.out
+__pycache__/
+.DS_Store
